@@ -14,9 +14,6 @@ spec:
       containers:
       - name: backend
         image: docker.io/prajwalmalokar/flask-backend:latest
-        env:
-        - name: BACKEND_URL
-          value: backend-service.default.svc.cluster.local
         ports:
         - containerPort: 8000
 
